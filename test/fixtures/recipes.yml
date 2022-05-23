@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rate: MyString
+  author_tip: MyString
+  budget: MyString
+  prep_time: MyString
+  name: MyString
+  author: MyString
+  difficulty: MyString
+  people_quantity: MyString
+  cook_time: MyString
+  total_time: MyString
+  image: MyString
+  nb_comments: MyString
+
+two:
+  rate: MyString
+  author_tip: MyString
+  budget: MyString
+  prep_time: MyString
+  name: MyString
+  author: MyString
+  difficulty: MyString
+  people_quantity: MyString
+  cook_time: MyString
+  total_time: MyString
+  image: MyString
+  nb_comments: MyString
