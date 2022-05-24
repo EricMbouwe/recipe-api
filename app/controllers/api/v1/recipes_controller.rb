@@ -9,14 +9,7 @@ class Api::V1::RecipesController < ApplicationController
 
   def show
     if @recipe
-      # render json: @recipe, status: 200
-
-      render json: {
-        id: @recipe.id,
-        name: @recipe.name,
-        ingredients: @recipe.ingredients,
-        tags: @recipe.tags
-      }
+      render json: @recipe, status: 200
     else
       render json: {error: 'Recipe not found.'}
     end
