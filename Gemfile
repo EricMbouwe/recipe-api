@@ -29,6 +29,7 @@ gem "puma", "~> 5.0"
 gem 'tzinfo-data'
 
 gem 'hirb', '~> 0.7.3'
+gem 'active_model_serializers', '~> 0.10.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
