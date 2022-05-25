@@ -10,7 +10,7 @@
 # Ingredient.destroy_all
 # Tag.destroy_all
 
-recipes_records = JSON.parse(File.read(Rails.root.join('db\json\recipes-fr.json')))
+recipes_records = JSON.parse(File.read(Rails.root.join('db/json/recipes-fr.json')))
 len = recipes_records.size
 p len
 
