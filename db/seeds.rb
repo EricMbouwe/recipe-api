@@ -10,7 +10,7 @@
 # Ingredient.destroy_all
 # Tag.destroy_all
 
-recipes_records = JSON.parse(File.read('public\assets\recipes-fr.json'))
+recipes_records = JSON.parse(File.read(Rails.root.join('db\json\recipes-fr.json')))
 len = recipes_records.size
 p len
 
@@ -21,7 +21,20 @@ p len
 #     ingredient_list = record['ingredients']
 #     tag_list = record['tags']
 
-#     recipe = Recipe.create(rate: record['rate'], author_tip: record['author_tip'], budget: record['budget'], prep_time: record['prep_time'], name: record['name'], author: record['author'], difficulty: record['difficulty'], people_quantity: record['people_quantity'], cook_time: record['cook_time'], total_time: record['total_time'], image: record['image'], nb_comments: record['nb_comments'])
+    # recipe = Recipe.create(
+    #     rate: record['rate'],
+    #     author_tip: record['author_tip'],
+    #     budget: record['budget'],
+    #     prep_time: record['prep_time'],
+    #     name: record['name'],
+    #     author: record['author'],
+    #     difficulty: record['difficulty'],
+    #     people_quantity: record['people_quantity'],
+    #     cook_time: record['cook_time'],
+    #     total_time: record['total_time'],
+    #     image: record['image'],
+    #     nb_comments: record['nb_comments']
+    # )
 
 #     ingredient_list.each do |ingredient|
 #         recipe.ingredients.create(name: ingredient)
