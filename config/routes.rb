@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :ingredients, only: [:index]
       resources :recipes, only: [:index, :show]
       post 'recipes/search'
+      post 'ingredients/search'
     end
   end
 end
