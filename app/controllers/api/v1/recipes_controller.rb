@@ -20,7 +20,7 @@ class Api::V1::RecipesController < ApplicationController
     user_ingredients = params_data.filter { |x| x.size > 0 }.map { |x| x.downcase }
     len = user_ingredients.size
 
-    @filtered_recipes = Recipe.joins(:ingredients).where(ingredients: { name: user_ingredients }).group('recipes.id').having('count(distinct ingredients.name) >= ?', "#{len}")
+    @filtered_recipes = Recipe.joins(:ingredients).where(ingredients: { name: user_ingredients }).group('recipes.id').having('count(distinct ingredients.name) >= ?', 1)
 
     render json: {recipes: @filtered_recipes}
   end
